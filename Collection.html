@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nka Studio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+<body style="height: 1000px;">
+        <header id = "header" class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a href="" class="navbar-brand">NKA-Studio</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                        aria-controls="navbarContent" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <li class="me-2">
+                        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href= "reg.html">Log In</a></button>
+                             -->
+                        <input type="checkbox" id="theme-switcher">
+                        <script>
+                            const themeSwitcher = document.getElementById('theme-switcher');
+                            const body = document.body;
+
+                            // При изменении значения переключателя, добавляем или удаляем класс соответствующей темы
+                            themeSwitcher.addEventListener('change', (event) => {
+                            if (event.target.checked) {
+                                body.classList.add('dark');
+                            } else {
+                                body.classList.remove('dark');
+                            }
+                            });
+                        </script> 
+                    </li>  
+                    <div class = "order-lg-2 nav-btns">
+                        <a class = "btn mt-2 text-decoration-none  text-light" href="reg.html" onclick="showHide('loginform')">login</a>
+                        <!-- <a class = "btn mt-2 text-decoration-none  text-light" onclick="changeColor()">mode</a> -->
+                </div>
+                
+                
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        
+                        <ul class="navbar-nav mr-auto mb-2">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Q&A.html" class="nav-link">Q&A</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Collection</a>
+                            </li>   
+                        </ul>
+                        <form action="" class="d-flex">
+                            <input type="search" placeholder="Search" class="form-control mr-2"> 
+                            <button class="btn btn-outline-secondary">Search</button>
+                        </form>
+                        
+
+                    </div>
+                </div>  
+                    
+            </nav>
+        </header>
+
+        <section class="section">
+            <div class="container">
+              <div class="section__tabs tabs">
+                <div class="tabs__head">
+                  <div class="tabs__caption" data-tab="home">Woman</div>
+                  <div class="tabs__caption" data-tab="portfolio">Men</div>
+                  <div class="tabs__caption" data-tab="about">About Collection</div>
+                </div>
+                <div class="tabs__body">
+                  <div class="tabs__content" data-tab="home">Home lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sit, repellat assumenda excepturi minima debitis atque nulla quibusdam iste eligendi voluptas, obcaecati nihil necessitatibus vel illum itaque ea molestias vero! Home lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sit, repellat assumenda excepturi minima debitis atque nulla quibusdam iste eligendi voluptas, obcaecati nihil necessitatibus vel illum itaque ea molestias vero!</div>
+                  <div class="tabs__content" data-tab="portfolio">Portfolio lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni sit, enim tenetur animi eius ea, similique optio nostrum quibusdam ex, dolores dolorem. Recusandae quo molestiae modi saepe ratione numquam!</div>
+                  <div class="tabs__content" data-tab="about">About lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quibusdam nemo qui numquam magnam! In sunt, ut cum nulla, accusantium mollitia et illum voluptate repudiandae! Magnam alias, iure saepe animi.</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="about">
+            <div class="container">
+              <div class="about__tabs tabs">
+                <div class="tabs__head">
+                  <div class="tabs__caption" data-tab="home">Woman</div>
+                  <div class="tabs__caption" data-tab="portfolio">Men</div>
+                  <div class="tabs__caption" data-tab="about">About Collection</div>
+                  <div class="tabs__caption" data-tab="contact">Tap to deliever</div>
+                </div>
+                <div class="tabs__body">
+                  <div class="tabs__content" data-tab="home">Home lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sit, repellat assumenda excepturi minima debitis atque nulla quibusdam iste eligendi voluptas, obcaecati nihil necessitatibus vel illum itaque ea molestias vero!</div>
+                  <div class="tabs__content" data-tab="portfolio">Portfolio lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magni sit, enim tenetur animi eius ea, similique optio nostrum quibusdam ex, dolores dolorem. Recusandae quo molestiae modi saepe ratione numquam!</div>
+                  <div class="tabs__content" data-tab="about">About lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quibusdam nemo qui numquam magnam! In sunt, ut cum nulla, accusantium mollitia et illum voluptate repudiandae! Magnam alias, iure saepe animi.</div>
+                  <div class="tabs__content" data-tab="contact">Contact lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ullam ducimus et facere nisi a dicta, ea, quae minima sequi expedita facilis doloremque excepturi, earum soluta magni! Dolores, expedita, ea.</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        <section id = "special" class = "py-5">
+            <div class = "container">
+                <div class = "title text-center py-5">
+                    <h2 class = "position-relative d-inline-block">Presentation</h2>
+                </div>
+    
+                <div class = "special-list row g-0">
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class = "special-img position-relative overflow-hidden">
+                            <img src = "nka images/pexels-ron-lach-9770973.jpg" class = "w-100">
+                            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            </span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">Woman</p>
+                            <span class = "fw-bold d-block">The best clothes at the best prices</span>
+                            <a href = "openTovar.html" class = "btn btn-primary mt-3">choose</a>
+                        </div>
+                    </div>
+    
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class = "special-img position-relative overflow-hidden">
+                            <img src = "nka images/pexels-monstera-6310924.jpg" class = "w-100">
+                            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+    
+                            </span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">Men</p>
+                            <span class = "fw-bold d-block">Be the most fashionable</span>
+                            <a href = "openTovar.html" class = "btn btn-primary mt-3">choose</a>
+                        </div>
+                    </div>
+    
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class = "special-img position-relative overflow-hidden">
+                            <img src = "nka images/pexels-olcay-ertem-10508388.jpg" class = "w-100">
+                            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+    
+                            </span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">Kids</p>
+                            <span class = "fw-bold d-block">Instill fashion for your children</span>
+                            <a href = "openTovar.html" class = "btn btn-primary mt-3">choose</a>
+                        </div>
+                    </div>
+    
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class = "special-img position-relative overflow-hidden">
+                            <img src = "nka images/pexels-godisable-jacob-914668.jpg" class = "w-100">
+                            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            </span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">Special</p>
+                            <span class = "fw-bold d-block">Choosing with a stylist</span>
+                            <a href = "openTovar.html" class = "btn btn-primary mt-3">choose</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <script src="col.js/pp.js"></script>
+
+    </body>
+    </html>
